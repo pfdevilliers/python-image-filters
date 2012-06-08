@@ -78,7 +78,8 @@ class FilterManager:
       # NOTE: Assumes that image_array is a numpy array
       image_filter = self.filters[filter_name]
       # NOTE: What happens if filter does not exist?
-      filter_array = numpy.zeros(image_array.shape, dtype=float) 
+      width,height,channels = image_array.shape
+      filter_array = numpy.zeros((width, height, 3), dtype=float) 
 
       p_r = image_filter.get_r()
       p_g = image_filter.get_g()
@@ -114,7 +115,6 @@ if __name__ == '__main__':
     filter_manager.add_filter(img_filter)
 
     filter_array = filter_manager.apply_filter('crgb', image_array)
-
     im = Image.fromarray(filter_array)
-    im.show()
-  
+    im.save('temp.png')
+    im.show() 
