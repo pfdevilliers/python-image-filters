@@ -10,8 +10,8 @@ A bit of code that was quickly hacked together for a small project. It supports 
 
 Normal image:
 
-![Image of building](http://github.com/pfdevilliers/python-image-filters/raw/master/images/building.png "Building image")
+![Image of building](https://raw.githubusercontent.com/pfdevilliers/python-image-filters/master/images/building.png "Building image")
 
 After curve application:
 
-![Image of building with curve](http://github.com/pfdevilliers/python-image-filters/raw/master/images/building_nasn.png "Building image")
+![Image of building with curve](https://raw.githubusercontent.com/pfdevilliers/python-image-filters/master/images/building_nasn.png "Building image")
